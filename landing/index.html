@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadence — Coach every rep like your best manager</title>
+  <meta name="description" content="Cadence turns every sales conversation into coaching, automatically. Close skill gaps, ramp reps faster, and lift win rates across the whole team." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Nav -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a class="brand" href="#top" aria-label="Cadence home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">Cadence</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#features">Platform</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="btn btn--ghost" href="#">Sign in</a>
+        <a class="btn btn--primary" href="#">Book a demo</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <span class="eyebrow">AI sales coaching</span>
+        <h1 class="hero__title">Your reps close more —<br /><span class="muted">without more managers.</span></h1>
+        <p class="hero__sub">Cadence listens to every call, scores what matters, and turns each conversation into focused coaching. Ramp new reps in weeks, not quarters.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary btn--lg" href="#">Book a demo</a>
+          <a class="btn btn--soft btn--lg" href="#how">See how it works</a>
+        </div>
+        <div class="hero__trust">
+          <span>Trusted by revenue teams at</span>
+          <ul class="logos" aria-label="Customer logos">
+            <li>Northwind</li>
+            <li>Lumen</li>
+            <li>Apex</li>
+            <li>Vela</li>
+            <li>Onyx</li>
+          </ul>
+        </div>
+        <div class="hero__preview" role="img" aria-label="Cadence dashboard preview">
+          <div class="preview__bar">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="preview__body">
+            <aside class="preview__side">
+              <p class="preview__side-title">Today</p>
+              <ul>
+                <li class="is-active">Pipeline review</li>
+                <li>Discovery — Acme</li>
+                <li>Demo — Vela Corp</li>
+                <li>Renewal — Onyx</li>
+              </ul>
+            </aside>
+            <div class="preview__main">
+              <div class="preview__row">
+                <div class="stat">
+                  <span class="stat__label">Talk ratio</span>
+                  <span class="stat__value">43<small>%</small></span>
+                  <span class="trend trend--up">+8 pts</span>
+                </div>
+                <div class="stat">
+                  <span class="stat__label">Win rate</span>
+                  <span class="stat__value">31<small>%</small></span>
+                  <span class="trend trend--up">+5 pts</span>
+                </div>
+                <div class="stat">
+                  <span class="stat__label">Ramp time</span>
+                  <span class="stat__value">6<small>wk</small></span>
+                  <span class="trend trend--down">-40%</span>
+                </div>
+              </div>
+              <div class="preview__card">
+                <p class="preview__card-title">Coaching moment · Discovery call</p>
+                <p class="preview__quote">"You jumped to pricing before confirming the buyer's timeline. Try anchoring on impact first."</p>
+                <div class="preview__chips">
+                  <span class="chip">Discovery</span>
+                  <span class="chip">Objection handling</span>
+                  <span class="chip chip--accent">+12% next call</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="section section--tight">
+      <div class="container narrow center">
+        <h2 class="section__title">Coaching shouldn't rely on random call reviews</h2>
+        <p class="section__lead">Managers can only sit in on a handful of calls a week. Everything else goes uncoached — and your team learns the hard way, one lost deal at a time.</p>
+        <div class="compare">
+          <div class="compare__col compare__col--bad">
+            <h3>Without Cadence</h3>
+            <ul>
+              <li>A few calls reviewed per rep, per month</li>
+              <li>Feedback is subjective and inconsistent</li>
+              <li>New reps ramp slowly with no playbook</li>
+              <li>Best practices stay locked in top performers</li>
+            </ul>
+          </div>
+          <div class="compare__col compare__col--good">
+            <h3>With Cadence</h3>
+            <ul>
+              <li>Every call scored against your playbook</li>
+              <li>Objective, repeatable coaching signals</li>
+              <li>Guided ramp with real examples</li>
+              <li>Winning patterns shared across the team</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dark feature section -->
+    <section class="section section--dark" id="features">
+      <div class="container">
+        <div class="center">
+          <span class="eyebrow eyebrow--light">The platform</span>
+          <h2 class="section__title section__title--light">Everything your managers need to close skill gaps</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="fcard fcard--wide">
+            <h3>Automatic call scoring</h3>
+            <p>Cadence transcribes and scores every call against your methodology — MEDDICC, SPICED, or your own — so nothing slips through.</p>
+            <div class="fcard__viz">
+              <div class="bar"><span style="--w:88%"></span><em>Rapport</em></div>
+              <div class="bar"><span style="--w:64%"></span><em>Discovery</em></div>
+              <div class="bar"><span style="--w:72%"></span><em>Next steps</em></div>
+              <div class="bar"><span style="--w:41%"></span><em>Objections</em></div>
+            </div>
+          </article>
+          <article class="fcard">
+            <h3>Skill gap radar</h3>
+            <p>See exactly which competencies each rep is missing — and which deals are at risk because of it.</p>
+          </article>
+          <article class="fcard">
+            <h3>Live deal warnings</h3>
+            <p>Get flagged the moment a key buying signal is missed, while there's still time to course-correct.</p>
+          </article>
+          <article class="fcard fcard--wide fcard--accent">
+            <h3>AI coaching with continuity</h3>
+            <p>Each rep gets one focused thing to work on per week, with the context of every conversation that came before — no more starting from scratch.</p>
+            <a class="btn btn--primary" href="#">Explore coaching</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outcomes / features strip -->
+    <section class="section" id="how">
+      <div class="container">
+        <div class="center">
+          <h2 class="section__title">Outcomes, not just features</h2>
+          <p class="section__lead">From conversation to coaching, automatically — in three steps.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <span class="step__num">01</span>
+            <h3>Connect your stack</h3>
+            <p>Plug Cadence into your dialer, meetings, and CRM. Calls flow in automatically — no manual uploads.</p>
+          </div>
+          <div class="step">
+            <span class="step__num">02</span>
+            <h3>Score every conversation</h3>
+            <p>Cadence analyzes talk ratio, discovery depth, objection handling, and next steps on each call.</p>
+          </div>
+          <div class="step">
+            <span class="step__num">03</span>
+            <h3>Coach on what matters</h3>
+            <p>Reps and managers get prioritized, specific coaching — tied to real moments and real revenue.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="section section--muted">
+      <div class="container narrow">
+        <div class="center"><h2 class="section__title">Outcomes our customers feel</h2></div>
+        <figure class="quote">
+          <blockquote>"We cut new-rep ramp time almost in half. The whole team is now coached on every call instead of the two or three a manager could get to."</blockquote>
+          <figcaption>
+            <span class="quote__avatar" aria-hidden="true">DM</span>
+            <span>
+              <strong>Daniel Moore</strong>
+              <em>VP Sales, Northwind</em>
+            </span>
+          </figcaption>
+        </figure>
+        <div class="metrics">
+          <div><strong>2.1x</strong><span>faster rep ramp</span></div>
+          <div><strong>+27%</strong><span>team win rate</span></div>
+          <div><strong>100%</strong><span>of calls coached</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Integrations -->
+    <section class="section">
+      <div class="container center">
+        <h2 class="section__title">Connect with 300+ popular apps</h2>
+        <p class="section__lead">Cadence fits the tools your team already lives in.</p>
+        <ul class="integrations" aria-label="Integrations">
+          <li>Salesforce</li>
+          <li>HubSpot</li>
+          <li>Zoom</li>
+          <li>Slack</li>
+          <li>Gong</li>
+          <li>Outreach</li>
+          <li>Aircall</li>
+          <li>Google Meet</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section section--muted" id="pricing">
+      <div class="container">
+        <div class="center">
+          <h2 class="section__title">Simple, scalable pricing</h2>
+          <p class="section__lead">Start with one team. Roll out to the whole org when you're ready.</p>
+        </div>
+        <div class="pricing">
+          <article class="plan">
+            <h3>Starter</h3>
+            <p class="plan__price">$29<span>/user · mo</span></p>
+            <p class="plan__desc">For small teams getting started with call coaching.</p>
+            <ul>
+              <li>Automatic call scoring</li>
+              <li>Weekly coaching digest</li>
+              <li>Up to 10 seats</li>
+            </ul>
+            <a class="btn btn--soft btn--block" href="#">Start free trial</a>
+          </article>
+          <article class="plan plan--featured">
+            <span class="plan__badge">Most popular</span>
+            <h3>Growth</h3>
+            <p class="plan__price">$59<span>/user · mo</span></p>
+            <p class="plan__desc">For scaling teams that coach on every conversation.</p>
+            <ul>
+              <li>Everything in Starter</li>
+              <li>Custom scorecards &amp; playbooks</li>
+              <li>Live deal warnings</li>
+              <li>CRM &amp; dialer integrations</li>
+            </ul>
+            <a class="btn btn--primary btn--block" href="#">Book a demo</a>
+          </article>
+          <article class="plan">
+            <h3>Enterprise</h3>
+            <p class="plan__price">Custom</p>
+            <p class="plan__desc">For orgs that need security, SSO, and scale.</p>
+            <ul>
+              <li>Everything in Growth</li>
+              <li>SSO &amp; advanced permissions</li>
+              <li>Dedicated success manager</li>
+            </ul>
+            <a class="btn btn--soft btn--block" href="#">Contact sales</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <div class="center"><h2 class="section__title">Questions, answered</h2></div>
+        <div class="faq">
+          <details>
+            <summary>How does Cadence get my calls?</summary>
+            <p>Cadence connects to your dialer and meeting tools and ingests calls automatically. There's nothing for reps to upload or remember.</p>
+          </details>
+          <details>
+            <summary>Can I use my own sales methodology?</summary>
+            <p>Yes. Bring your own scorecard or use a built-in framework like MEDDICC or SPICED. Cadence scores every call against it.</p>
+          </details>
+          <details>
+            <summary>Is my data secure?</summary>
+            <p>All data is encrypted in transit and at rest. Enterprise plans add SSO, role-based access, and regional data residency.</p>
+          </details>
+          <details>
+            <summary>How long does setup take?</summary>
+            <p>Most teams are live within a day. Connect your stack, pick a scorecard, and calls start flowing in immediately.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta">
+      <div class="container center">
+        <h2 class="cta__title">Help every rep perform like<br />your top performers</h2>
+        <p class="cta__sub">See how Cadence turns every conversation into coaching — book a 20-minute demo.</p>
+        <div class="hero__cta center-cta">
+          <a class="btn btn--primary btn--lg" href="#">Book a demo</a>
+          <a class="btn btn--ghost btn--ghost-light btn--lg" href="#">Talk to sales</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand" href="#top">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__name">Cadence</span>
+        </a>
+        <p>Coaching for every conversation.</p>
+      </div>
+      <nav class="footer__cols" aria-label="Footer">
+        <div>
+          <h4>Product</h4>
+          <a href="#features">Platform</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#how">How it works</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Security</a>
+        </div>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 Cadence Labs, Inc.</span>
+      <span>Made for revenue teams.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
