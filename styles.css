@@ -488,6 +488,81 @@ button { font-family: inherit; background: none; border: 0; cursor: pointer; }
 .flow__actions { display: flex; justify-content: flex-end; }
 .btn--next { gap: 12px; width: 100%; }
 .ic--white { stroke: #fff; width: 20px; height: 20px; }
+.ic--dark { stroke: rgba(0, 0, 0, 0.85); width: 20px; height: 20px; }
+
+/* Serial step */
+.stepper__line--active { background: var(--blue); }
+.serial-head {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.flow__heading strong { font-weight: 500; color: #000; }
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--slate);
+}
+.swatch { width: 12px; height: 12px; border-radius: 4px; }
+.swatch--available { background: #fff; box-shadow: inset 0 0 0 1px #d2d8e2; }
+.swatch--booked { background: #e4e8ec; }
+.swatch--selected { background: var(--blue); }
+
+.serial-panel {
+  background: var(--card-bg);
+  border-radius: 28px;
+  padding: 16px;
+}
+.serial-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+}
+.serial-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+.slot {
+  height: 44px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px #d2d8e2;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--slate);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slot--booked { background: #f2f4f7; box-shadow: none; color: #b3bcc9; cursor: default; }
+.slot--selected { background: var(--blue); box-shadow: none; color: #fff; }
+
+.flow__actions--split { justify-content: space-between; gap: 12px; }
+.btn--back {
+  gap: 8px;
+  background: #fbfbfb;
+  border: 1px solid var(--line);
+  color: rgba(0, 0, 0, 0.85);
+  flex-shrink: 0;
+}
+.flow__actions--split .btn--next { flex: 1; width: auto; }
+
+@media (min-width: 640px) {
+  .serial-head { flex-direction: row; align-items: flex-end; justify-content: space-between; }
+  .serial-panel { padding: 24px; }
+  .serial-card { padding: 24px; }
+  .serial-grid { grid-template-columns: repeat(10, 1fr); gap: 7px; }
+  .flow__actions--split .btn--next { flex: 0 0 auto; }
+}
 
 @media (min-width: 640px) {
   .flow { max-width: 800px; margin: 56px auto 0; width: 100%; padding-bottom: 48px; }
