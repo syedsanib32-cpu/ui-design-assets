@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Patient Details — Dr. Atanu Bhattacharjee</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ BOOKING FLOW: PATIENT DETAILS ============ -->
+<section class="hero-section">
+  <div class="hero-card hero-card--tint">
+
+    <!-- Navbar -->
+    <header class="nav">
+      <a class="nav__brand" href="index.html">
+        <span class="avatar avatar--sm" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><circle cx="16" cy="12" r="6" fill="#9db4d8"/><path d="M4 32c0-7 5.4-11 12-11s12 4 12 11z" fill="#9db4d8"/></svg>
+        </span>
+        <span class="nav__name">Dr. Atanu Bhattacharjee</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav__toggle-input" />
+      <label for="nav-toggle" class="nav__toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav__menu">
+        <a href="index.html">Home</a>
+        <a href="#">Book Appointment</a>
+        <a href="#">Check Status</a>
+        <a href="#">Location</a>
+        <a href="#">FAQ</a>
+        <a href="#" class="btn btn--primary btn--nav">Book Now</a>
+      </nav>
+    </header>
+
+    <div class="flow">
+
+      <!-- Stepper -->
+      <ol class="stepper">
+        <li class="stepper__step stepper__step--active">
+          <span class="stepper__dot">1</span>
+          <span class="stepper__label">Date</span>
+        </li>
+        <li class="stepper__line stepper__line--active" aria-hidden="true"></li>
+        <li class="stepper__step stepper__step--active">
+          <span class="stepper__dot">2</span>
+          <span class="stepper__label">Serial</span>
+        </li>
+        <li class="stepper__line stepper__line--active" aria-hidden="true"></li>
+        <li class="stepper__step stepper__step--active">
+          <span class="stepper__dot">3</span>
+          <span class="stepper__label">Details</span>
+        </li>
+        <li class="stepper__line" aria-hidden="true"></li>
+        <li class="stepper__step">
+          <span class="stepper__dot">4</span>
+          <span class="stepper__label">Review</span>
+        </li>
+        <li class="stepper__line" aria-hidden="true"></li>
+        <li class="stepper__step">
+          <span class="stepper__dot">5</span>
+          <span class="stepper__label">Payment</span>
+        </li>
+      </ol>
+
+      <!-- Heading -->
+      <div class="flow__heading">
+        <h1>Patient Details</h1>
+        <p>Please provide accurate information for the appointment.</p>
+      </div>
+
+      <!-- Notice banner -->
+      <div class="notice">
+        <span class="notice__badge" aria-hidden="true">!</span>
+        <p>Important Notice — Online booking is not for medical emergencies. If this is a medical emergency, call emergency services or visit the nearest hospital immediately.</p>
+      </div>
+
+      <!-- Form -->
+      <form class="flow__body" onsubmit="return false">
+        <div class="form-card">
+          <div class="form-grid">
+            <div class="field">
+              <label for="pname">Patient Name</label>
+              <input id="pname" class="input" type="text" value="Syed Sanib" />
+            </div>
+            <div class="field">
+              <label for="phone">Phone Number</label>
+              <input id="phone" class="input" type="tel" value="01623123131" />
+            </div>
+            <div class="field">
+              <label for="age">Age</label>
+              <input id="age" class="input" type="text" value="25" />
+            </div>
+            <div class="field">
+              <label for="gender">Gender</label>
+              <div class="select">
+                <select id="gender">
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Other</option>
+                </select>
+                <svg viewBox="0 0 16 16" class="select__chevron" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <span class="field__label">Patient Type</span>
+            <div class="pills">
+              <label class="pill pill--selected">
+                <input type="radio" name="ptype" checked />
+                <span class="pill__radio" aria-hidden="true"></span>
+                New Patient
+              </label>
+              <label class="pill">
+                <input type="radio" name="ptype" />
+                <span class="pill__radio" aria-hidden="true"></span>
+                Follow-up
+              </label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="note">Short Problem Note <span class="field__optional">(Optional)</span></label>
+            <textarea id="note" class="textarea" placeholder="Briefly describe the main symptoms or reason for visit"></textarea>
+          </div>
+
+          <label class="check">
+            <input type="checkbox" />
+            <span class="check__box" aria-hidden="true"></span>
+            <span>This is an urgent situation <span class="check__warn">(Warning: Not for life-threatening emergencies)</span></span>
+          </label>
+        </div>
+
+        <div class="flow__actions flow__actions--split">
+          <a href="select-serial.html" class="btn btn--back">
+            <svg viewBox="0 0 20 20" class="ic ic--dark"><path d="M12.5 4.5 7 10l5.5 5.5"/></svg>
+            Back
+          </a>
+          <a href="#" class="btn btn--primary btn--next">
+            Next
+            <svg viewBox="0 0 20 20" class="ic ic--white"><path d="M7.5 4.5 13 10l-5.5 5.5"/></svg>
+          </a>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__cols">
+
+    <div class="footer__brand">
+      <a class="footer__logo" href="index.html">
+        <span class="avatar avatar--lg" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><circle cx="16" cy="12" r="6" fill="#9db4d8"/><path d="M4 32c0-7 5.4-11 12-11s12 4 12 11z" fill="#9db4d8"/></svg>
+        </span>
+        <span>Dr. Atanu Bhattacharjee</span>
+      </a>
+      <div class="footer__social">
+        <p>Find on Social Media</p>
+        <div class="footer__social-btns">
+          <a href="#" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 16 16"><path d="M9.2 5.4V4.1c0-.6.4-.8.8-.8h1.3V1.2H9.5C7.7 1.2 6.8 2.5 6.8 4v1.4H5.1v2.3h1.7v7.1h2.4V7.7h1.8l.3-2.3z" fill="#fff"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 16 16"><path d="M3.6 5.9H1.5v8.5h2.1zM2.5 1.6a1.3 1.3 0 1 0 0 2.6 1.3 1.3 0 0 0 0-2.6zM8 5.9H6v8.5h2.1v-4.5c0-1.1.5-1.9 1.6-1.9s1.5.8 1.5 1.9v4.5h2.2V9.2c0-2.2-1.2-3.5-3-3.5-1.2 0-1.9.5-2.4 1.3z" fill="#fff"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__links">
+      <p class="footer__heading">Quick Links</p>
+      <nav class="footer__nav">
+        <a href="index.html">Home</a>
+        <a href="#">Book Appointment</a>
+        <a href="#">Check Status</a>
+        <a href="#">Location</a>
+        <a href="#">FAQ</a>
+      </nav>
+    </div>
+
+    <div class="footer__visit">
+      <p class="footer__heading">Visit Us</p>
+      <div class="visit-card">
+        <div class="visit-card__row">
+          <span class="icon-tile" aria-hidden="true">
+            <svg viewBox="0 0 16 16" class="ic"><path d="M8 14s4.7-4 4.7-7.4A4.7 4.7 0 0 0 8 1.9a4.7 4.7 0 0 0-4.7 4.7C3.3 10 8 14 8 14z"/><circle cx="8" cy="6.6" r="1.7"/></svg>
+          </span>
+          <div>
+            <strong>Human Specialist Hospital</strong>
+            <p>Sunamganj, Sylhet, Bangladesh</p>
+          </div>
+        </div>
+        <div class="visit-card__row">
+          <span class="icon-tile" aria-hidden="true">
+            <svg viewBox="0 0 16 16" class="ic"><circle cx="8" cy="8" r="6.2"/><path d="M8 4.6V8l2.3 1.6"/></svg>
+          </span>
+          <div>
+            <strong>Visiting Hours: 5:00 PM – 9:00 PM</strong>
+            <p class="visit-card__closed">Closed on Friday</p>
+          </div>
+        </div>
+        <a href="#" class="visit-card__directions">
+          Get directions
+          <svg viewBox="0 0 14 14" class="ic ic--blue"><path d="M4 10 10 4M5.2 4H10v4.8"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer__bottom">
+    <p>© 2026 Dr. Atanu Bhattacharjee. All rights reserved.</p>
+    <p class="footer__tagline">Caring for you, every visit.</p>
+  </div>
+</footer>
+
+</body>
+</html>
